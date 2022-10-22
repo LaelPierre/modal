@@ -295,4 +295,21 @@ Modal
   display: grid;
   place-items: center;
   border-radius: var(--borderRadius);
+  position: relative;
+}
+
+.close-btn {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  background: transparent;
+  border: transparent;
+  font-size: 1.5rem;
+  color: var(--red-dark);
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.close-btn:hover {
+  transform: rotate(360deg) scale(1.3);
 }
