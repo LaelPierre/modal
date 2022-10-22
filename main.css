@@ -275,7 +275,7 @@ Modal
 }
 
 .modal-overlay {
-  visibility: visible;
+  visibility: hidden;
   position: fixed;
   background: rgba(0, 0, 0, 0.6);
   /* top: 0;
@@ -285,6 +285,13 @@ Modal
   inset: 0;
   display: grid;
   place-items: center;
+  transition: var(--transition);
+  z-index: -10;
+}
+
+.show-modal {
+  visibility: visible;
+  z-index: 10;
 }
 
 .modal-center {
