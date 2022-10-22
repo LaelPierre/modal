@@ -275,5 +275,24 @@ Modal
 }
 
 .modal-overlay {
-  visibility: hidden;
+  visibility: visible;
+  position: fixed;
+  background: rgba(0, 0, 0, 0.6);
+  /* top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0; */
+  inset: 0;
+  display: grid;
+  place-items: center;
+}
+
+.modal-center {
+  background: var(--white);
+  height: 35vh;
+  width: 90vw;
+  max-width: var(--fixed-width);
+  display: grid;
+  place-items: center;
+  border-radius: var(--borderRadius);
 }
