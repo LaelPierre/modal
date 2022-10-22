@@ -257,3 +257,23 @@ ul {
 Modal
 ===============
 */
+.modal {
+  min-height: 100vh;
+  background: url("./hero-2.jpg") center/cover no-repeat;
+  display: grid;
+  place-items: center;
+}
+
+.banner {
+  background: var(--white);
+  padding: 2rem 0;
+  width: 90vw;
+  max-width: var(--fixed-width);
+  border-radius: var(--borderRadius);
+  text-align: center;
+  box-shadow: var(--shadow-2);
+}
+
+.modal-overlay {
+  visibility: hidden;
+}
